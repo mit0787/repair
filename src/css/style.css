@@ -1,5 +1,21 @@
+@font-face {
+  font-family: 'Museo Sans Cyrl Regular';
+  src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.eot");
+  src: local("MuseoSansCyrl-300"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.woff") format("woff"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Museo Sans Cyrl Bold';
+  src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.eot");
+  src: local("MuseoSansCyrl-700"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.woff") format("woff"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
-  font-family: sans-serif;
+  font-family: 'Museo Sans Cyrl Regular';
   color: #333333;
 }
 
@@ -76,6 +92,8 @@ img {
 
 .navbar__button {
   margin-left: 30px;
+  font-family: 'Museo Sans Cyrl Bold';
+  font-weight: 700;
   font-size: 13px;
   font-weight: 400;
 }
@@ -88,6 +106,8 @@ img {
 .navbar__phone {
   margin-top: 9px;
   text-decoration: none;
+  font-family: 'Museo Sans Cyrl Bold';
+  font-weight: 700;
   font-size: 20px;
   font-weight: 400;
   color: #333333;
@@ -130,17 +150,19 @@ img {
 }
 
 .hero-text__title {
-  margin-bottom: 40px;
-  font-size: 41px;
+  margin-bottom: 38px;
+  font-family: 'Museo Sans Cyrl Bold';
   font-weight: 700;
+  font-size: 41px;
   line-height: 55px;
 }
 
 .hero-text__subtitle {
   display: inline-block;
   margin-bottom: 69px;
-  font-size: 20px;
+  font-family: 'Museo Sans Cyrl Bold';
   font-weight: 700;
+  font-size: 20px;
 }
 
 .hero-list {
@@ -175,15 +197,19 @@ img {
   border-radius: 50%;
 }
 
+.hero-list__image img {
+  max-height: 20px;
+  max-width: 20px;
+}
+
 .hero-list__item:not(:last-child) {
-  margin-bottom: 25px;
+  margin-bottom: 23px;
 }
 
 .hero-list__text {
-  max-width: 231px;
+  max-width: 235px;
   margin-left: 30px;
   font-size: 14px;
-  font-weight: 400;
   line-height: 24px;
 }
 
