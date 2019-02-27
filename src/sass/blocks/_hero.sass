@@ -6,7 +6,11 @@
     justify-content: space-between
   &-text
     flex-basis: 50%
+    display: flex
+    flex-direction: column
+    
     &__title
+      display: inline-block
       margin-bottom: 38px
       +bold
       font-size: 41px
@@ -15,8 +19,11 @@
       display: inline-block
       margin-bottom: 69px
       +bold
-      font-size: 20px   
+      font-size: 20px
+      font-weight: 400
   &-list
+    display: flex
+    flex-direction: column
     list-style: none
     padding: 0
     margin: 0
@@ -50,26 +57,63 @@
   .hero
     &-block
       flex-direction: column
+      align-items: center
+    &-text
+      align-items: center
+      text-align: center
+      &__title
+        max-width: 470px
+      &__subtitle
+        font-size: 26px
     &-list
+      align-items: center
+      text-align: left
+      &__item
+        width: 404px
+      &__text
+        max-width: 350px
+        font-size: 20px
       &__item:last-child
         margin-bottom: 38px
 @media (max-width: 768px)
   .hero
-    padding: 40px 25px 52px 26px
-    &-text__title
-      margin-top: 0
-      margin-bottom: 11px
-      font-size: 22px
-      line-height: 28px
-    &-text__subtitle
-      margin-bottom: 28px
-      font-size: 16px
+    padding: 40px 22px 52px 24px
+    &-text
+      &__title
+        max-width: 340px
+        margin-top: 0
+        margin-bottom: 9px
+        font-size: 24px
+        line-height: 28px
+    &-text
+      &__subtitle
+        margin-bottom: 29px
+        font-size: 16px
     &-list
+      &__item
+        width: 270px
       &__item:not(:last-child)
-        margin-bottom: 19px
+        margin-bottom: 20px
       &__text
-        max-width: 198px
+        max-width: 220px
         font-size: 12px
         margin-left: 15px
-        line-height: 1.4
+        line-height: 1.3
+@media (min-width: 320px) and (max-width: 576px)
+  .hero
+    &-image
+      max-width: 270px
+      margin-left: -5px  
+    &-text
+      text-align: left
+      &__title
+        max-width: 275px
+      &__subtitle
+        max-width: 270px    
+    &-list
+      margin-left: -5px
+      &__text
+        max-width: 220px
+
+
 
