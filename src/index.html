@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,20 +9,21 @@
   <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
   <nav class="navbar">
     <div class="container">
       <div class="navbar-block">
         <div class="navbar__logo">
-          <img src="./img/logo.png" alt="Логотип">
+          <img src="./img/navbar/logo.png" alt="Логотип">
         </div>
         <!-- /.navbar__logo -->
         <div class="navbar__info">
           <div class="navbar__contacts">
             <span class="navbar__adress">Калуга, Москва, МО</span>
-             <!-- /.navbar__adress -->
-             <a href="tel: +7 (495) 42-251-31" class="navbar__phone">+7 (495) 42-251-31</a>
-              <!-- /.navbar__phone -->
+            <!-- /.navbar__adress -->
+            <a href="tel: +7 (495) 42-251-31" class="navbar__phone">+7 (495) 42-251-31</a>
+            <!-- /.navbar__phone -->
           </div>
           <!-- /.navbar__contacts -->
           <button class="button navbar__button">Перезвоните мне</button>
@@ -46,38 +48,38 @@
             <span class="hero-text__subtitle">
               с гарантией качества, прописанной в договоре
             </span>
-             <!-- /.hero-text__subtitle -->
-             <ul class="hero-list">
-               <li class="hero-list__item">
-                 <div class="hero-list__image">
-                  <img src="./img/clock.svg" alt="" class="hero-list__icon">
-                 </div>
-                 <span class="hero-list__text">
+            <!-- /.hero-text__subtitle -->
+            <ul class="hero-list">
+              <li class="hero-list__item">
+                <div class="hero-list__image">
+                  <img src="./img/hero/clock.svg" alt="" class="hero-list__icon">
+                </div>
+                <span class="hero-list__text">
                   Точно соблюдаем сроки
-                 </span>
-               </li>
-               <li class="hero-list__item">
-                 <div class="hero-list__image">
-                  <img src="./img/calculator.svg" alt="" class="hero-list__icon">
-                 </div>
-                 <span class="hero-list__text">
+                </span>
+              </li>
+              <li class="hero-list__item">
+                <div class="hero-list__image">
+                  <img src="./img/hero/calculator.svg" alt="" class="hero-list__icon">
+                </div>
+                <span class="hero-list__text">
                   Рассчитаем смету на работы <br>и материалы в день обращения
-                 </span>
-               </li>
-               <li class="hero-list__item">
-                 <div class="hero-list__image">
-                  <img src="./img/paint-board.svg" alt="" class="hero-list__icon">
-                 </div>
-                 <span class="hero-list__text">
+                </span>
+              </li>
+              <li class="hero-list__item">
+                <div class="hero-list__image">
+                  <img src="./img/hero/paint-board.svg" alt="" class="hero-list__icon">
+                </div>
+                <span class="hero-list__text">
                   Предложим более 100 вариантов исполнения дизайна Вашего жилья
-                 </span>
-               </li>
-             </ul>
-              <!-- /.hero-list -->
+                </span>
+              </li>
+            </ul>
+            <!-- /.hero-list -->
           </div>
           <!-- /.hero-text -->
           <div class="hero-image">
-            <img src="./img/hero-image.jpg" alt="">
+            <img src="./img/hero/hero-image.jpg" alt="">
           </div>
           <!-- /.hero-image -->
         </div>
@@ -86,6 +88,35 @@
       <!-- /.container -->
     </section>
     <!-- /.hero -->
+
+    <section class="offer">
+      <div class="container">
+        <div class="offer-block">
+          <h2 class="offer__title">Мы бесплатно разработаем дизайн-проект Вашего жилья и реализуем его!</h2>
+          <!-- /.offer__title -->
+          <span class="offer__subtitle">Оставьте заявку на разработку бесплатного дизайн-проекта!</span>
+          <!-- /.offer__subtitle -->
+          <form action="#" class="form offer__form">
+            <input type="text" class="input offer__input" placeholder="Ваше имя">
+            <input type="tell" class="input offer__input" placeholder="Ваш телефон">
+            <button class="button offer__button">Получить бесплатный дизайн-проект</button>
+          </form>
+          <!-- /.form offer__form -->
+          <div class="offer__text">
+            <div class="offer__text_left">
+              <span>Наш менеджер перезвонит Вам <br>в течение 60 секунд</span>
+            </div>
+            <div class="offer__text_right">
+              <span>или перезвоните нам сами</span> 
+              <a href="tel: +7 (495) 42-251-31" class="offer__phone navbar__phone">+7 (495) 42-251-31</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.offer -->
   </main>
 </body>
+
 </html>

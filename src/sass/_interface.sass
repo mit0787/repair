@@ -1,3 +1,5 @@
+*
+  box-sizing: border-box
 body
   font-family: 'Museo Sans Cyrl Regular'
   color: $text-color
@@ -21,3 +23,15 @@ img
   border-radius: 10px
   background-color: $primary-color
   border: none
+  &:hover
+    cursor: pointer
+    background-color: lighten($primary-color, 10%)
+.input
+  border: 1px solid $border-input
+  padding: 20px 26px
+  font-size: 16px
+  border-radius: 10px
+  &:focus
+    border: 1px solid $primary-color
+    outline-style: none
+

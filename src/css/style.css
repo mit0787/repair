@@ -14,6 +14,11 @@
   font-style: normal;
 }
 
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 body {
   font-family: 'Museo Sans Cyrl Regular';
   color: #333333;
@@ -52,6 +57,23 @@ img {
   border-radius: 10px;
   background-color: #ffd200;
   border: none;
+}
+
+.button:hover {
+  cursor: pointer;
+  background-color: #ffdb33;
+}
+
+.input {
+  border: 1px solid #dddddd;
+  padding: 20px 26px;
+  font-size: 16px;
+  border-radius: 10px;
+}
+
+.input:focus {
+  border: 1px solid #ffd200;
+  outline-style: none;
 }
 
 .navbar {
@@ -133,7 +155,7 @@ img {
 }
 
 .hero {
-  padding: 50px 0 52px 0;
+  padding: 50px 0;
   background-color: #f5f5f5;
 }
 
@@ -208,9 +230,9 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-flex-preferred-size: 36px;
-      flex-basis: 36px;
-  height: 36px;
+  -ms-flex-preferred-size: 40px;
+      flex-basis: 40px;
+  height: 40px;
   border: 2px solid #ffd200;
   border-radius: 50%;
 }
@@ -221,7 +243,7 @@ img {
 }
 
 .hero-list__item:not(:last-child) {
-  margin-bottom: 23px;
+  margin-bottom: 24px;
 }
 
 .hero-list__text {
@@ -329,5 +351,257 @@ img {
   }
   .hero-list__text {
     max-width: 220px;
+  }
+}
+
+.offer {
+  position: relative;
+  padding: 76px 0 90px 0;
+  margin-bottom: 500px;
+  background: url("../img/offer/offer-bg.png") no-repeat;
+  background-position: center right;
+  background-position: right;
+  background-size: contain;
+}
+
+.offer:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 50%;
+  height: 100%;
+  background-color: #fff;
+}
+
+.offer-block {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50%;
+  max-width: 495px;
+}
+
+.offer__title {
+  max-width: 360px;
+  margin-top: 0;
+  font-family: 'Museo Sans Cyrl Bold';
+  font-weight: 700;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 35px;
+}
+
+.offer__subtitle {
+  display: block;
+  max-width: 240px;
+  margin-bottom: 30px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.offer__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.offer__input {
+  margin-bottom: 30px;
+  -ms-flex-preferred-size: 240px;
+      flex-basis: 240px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.offer__input:first-child {
+  margin-right: 14px;
+}
+
+.offer__button {
+  -ms-flex-preferred-size: 495px;
+      flex-basis: 495px;
+  width: 100%;
+  margin-bottom: 25px;
+  padding: 26px 0;
+  font-size: 16px;
+  font-family: 'Museo Sans Cyrl Bold';
+  font-weight: 700;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.offer__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.offer__text_left {
+  -ms-flex-preferred-size: 230px;
+      flex-basis: 230px;
+  line-height: 24px;
+}
+
+.offer__text_right {
+  -ms-flex-preferred-size: 195px;
+      flex-basis: 195px;
+}
+
+.offer__text span {
+  display: block;
+}
+
+.offer__phone {
+  display: block;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+@media (max-width: 1200px) {
+  .offer {
+    background-size: cover;
+  }
+  .offer-block {
+    padding-right: 0;
+  }
+  .offer__title {
+    max-width: 305px;
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .offer__input {
+    -ms-flex-preferred-size: 275px;
+        flex-basis: 275px;
+  }
+  .offer__button {
+    -ms-flex-preferred-size: 275px;
+        flex-basis: 275px;
+    padding: 18px 35px;
+    font-size: 14px;
+  }
+  .offer__text {
+    max-width: 275px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .offer__text_left, .offer__text_right {
+    -ms-flex-preferred-size: 48px;
+        flex-basis: 48px;
+  }
+  .offer__text_left {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 786px) {
+  .offer {
+    padding: 50px 0;
+    background: #fff;
+  }
+  .offer .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .offer-block {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    padding: 0;
+  }
+  .offer__title {
+    max-width: 350px;
+    text-align: center;
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .offer__subtitle {
+    max-width: 235px;
+  }
+  .offer__input:first-child {
+    margin-right: 0;
+  }
+  .offer__form {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    max-width: 495px;
+  }
+  .offer__text {
+    max-width: 495px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 576px) {
+  .offer-block {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    max-width: 275px;
+  }
+  .offer__title {
+    max-width: 260px;
+    margin-bottom: 18px;
+    text-align: left;
+    font-size: 18px;
+    line-height: 1.2;
+  }
+  .offer__subtitle {
+    max-width: 210px;
+    margin-bottom: 28px;
+    text-align: left;
+    font-size: 14px;
+  }
+  .offer__input {
+    margin-bottom: 8px;
+  }
+  .offer__input:first-child {
+    margin-right: 0;
+  }
+  .offer__button {
+    margin-bottom: 20px;
+  }
+  .offer__text {
+    margin-left: 6px;
+    text-align: left;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .offer__text span {
+    font-size: 15px;
+    font-weight: 400;
   }
 }
