@@ -64,6 +64,10 @@ img {
   background-color: #ffdb33;
 }
 
+.button:focus {
+  outline-style: none;
+}
+
 .input {
   border: 1px solid #dddddd;
   padding: 20px 26px;
@@ -357,7 +361,6 @@ img {
 .offer {
   position: relative;
   padding: 76px 0 90px 0;
-  margin-bottom: 500px;
   background: url("../img/offer/offer-bg.png") no-repeat;
   background-position: center right;
   background-position: right;
@@ -604,4 +607,36 @@ img {
     font-size: 15px;
     font-weight: 400;
   }
+}
+
+.modal {
+  position: fixed;
+  display: none;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal_active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.modal-dialog {
+  position: relative;
+  margin: auto;
+  max-width: 450px;
+  width: 90%;
+  min-width: 200px;
+  background-color: #fff;
+  padding: 40px;
+}
+
+.modal-dialog__close {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
