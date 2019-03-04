@@ -1,0 +1,45 @@
+.portfolio
+  background: $secondary-color url("../img/portfolio/portfolio-pattern.png") repeat-y center left
+  background-size: 50%
+  &__title
+    margin: auto
+    margin-bottom: 95px
+  &__slider
+    margin-bottom: 68px
+
+.arrows
+  margin: auto
+  display: flex
+  justify-content: center
+  &__left
+    text-align: left
+  &__right
+    text-align: right
+  &__left, &__right
+    flex-basis: 60px
+    cursor: pointer
+@media (max-width: 1200px)
+  .portfolio
+    &__title
+      margin-bottom: 41px
+    &__slider
+      margin-bottom: 46px
+  .slider
+    &__image
+      margin: auto
+@media (max-width: 768px)
+  .portfolio
+    padding-top: 43px
+    padding-bottom: 64px
+    background: $secondary-color
+    &__title
+      max-width: 380px
+@media (max-width: 576px)
+  .portfolio
+    &__title
+      max-width: 275px
+  .slider
+    &__image
+      max-width: 246px
+
+    

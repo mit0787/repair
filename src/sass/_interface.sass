@@ -8,16 +8,6 @@ img
 .container
   width: 1170px
   margin: auto
-@media (max-width: 1200px)
-  .container
-    width: 760px
-@media (max-width: 768px)
-  .container
-    max-width: 560px
-    width: 95%
-@media (max-width: 567px)
-  .container
-    width: 100%
 .button
   padding: 18px 30px
   border-radius: 10px
@@ -53,4 +43,32 @@ img
   &:focus
     border: 1px solid $primary-color
     outline-style: none
+.section
+  padding: 100px 0
+.section-title
+  margin: 0
+  font-size: 30px
+  line-height: 45px
+  +bold
+  text-align: center
+@media (max-width: 1200px)
+  .container
+    width: 760px
+  .section-title
+    font-size: 24px
+@media (max-width: 768px)
+  .container
+    max-width: 560px
+    width: 95%
+  .section-title
+    font-size: 24px
+    line-height: 28px
+@media (max-width: 576px)
+  .container
+    width: 100%
+  .section-title
+    max-width: 270px
+    font-size: 18px
+    line-height: 1.2
+    
 

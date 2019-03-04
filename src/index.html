@@ -7,6 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Ремонт Квартир</title>
   <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/slick.css">
   <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -118,6 +119,42 @@
     <!-- /.offer -->
   </main>
 
+  <section class="section portfolio">
+    <div class="container">
+      <h2 class="section-title portfolio__title">Работая с 2007 года,<br>
+      мы сделали более 500 ремонтов в квартирах и домах</h2>
+      <!-- /.section-title portfolio_title -->
+      <div class="slider portfolio__slider">
+        <div class="slider__item"><img class="slider__image" src="img/portfolio/photo-1.png" alt=""></div>
+        <!-- /.slider_item -->
+        <div class="slider__item"><img class="slider__image" src="img/portfolio/photo-2.png" alt=""></div>
+        <!-- /.slider_item -->
+        <div class="slider__item"><img class="slider__image" src="img/portfolio/photo-3.png" alt=""></div>
+        <!-- /.slider_item -->
+        <div class="slider__item"><img class="slider__image" src="img/portfolio/photo-1.png" alt=""></div>
+        <!-- /.slider_item -->
+        <div class="slider__item"><img class="slider__image" src="img/portfolio/photo-2.png" alt=""></div>
+        <!-- /.slider_item -->
+        <div class="slider__item"><img class="slider__image" src="img/portfolio/photo-3.png" alt=""></div>
+        <!-- /.slider_item -->
+      </div>
+      <!-- /.slider -->
+      <div class="arrows">
+        <div class="arrows__left">
+          <img src="./img/portfolio/left-arrow.png" alt="">
+        </div>
+        <!-- /.arrows__left -->
+        <div class="arrows__right">
+          <img src="./img/portfolio/right-arrow.png" alt="">
+        </div>
+        <!-- /.arrows__right -->
+      </div>
+      <!-- /.arrows -->
+    </div>
+    <!-- /.container -->
+  </section>
+  <!-- /.section portfolio -->
+
   <div class="modal" id="modal">
     <div class="modal-dialog">
       <button class="modal-dialog__close" id="close">&times;</button> <!-- /.modal-dialog__close -->
@@ -132,6 +169,36 @@
 
   <script src="./js/jquery-3.3.1.min.js"></script>
   <script src="./js/modal.js"></script>
+  <script src="./js/slick.min.js"></script>
+  <script>
+  $(document).ready(function () {
+    $(".slider").slick({
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      prevArrow: $(".arrows__left"),
+      nextArrow: $(".arrows__right"),
+      responsive: [
+        {
+          breakpoint: 1201,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1
+          }
+        },
+        {
+          breakpoint: 787,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+        
+      ]
+    });
+  });
+
+
+  </script>
 
 </body>
 
