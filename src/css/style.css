@@ -68,6 +68,27 @@ img {
   outline-style: none;
 }
 
+.button_top {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  margin-left: -40px;
+  cursor: pointer;
+  width: 0;
+  height: 0;
+  border: 40px solid transparent;
+  border-bottom-color: #ffd200;
+  border-top: 0;
+}
+
+.button_top span {
+  position: absolute;
+  bottom: -35px;
+  left: -20px;
+  font-size: 12px;
+}
+
 .input {
   border: 1px solid #dddddd;
   padding: 20px 26px;
@@ -360,11 +381,10 @@ img {
 
 .offer {
   position: relative;
-  padding: 76px 0 90px 0;
+  padding: 76px 0 89px 0;
   background: url("../img/offer/offer-bg.png") no-repeat;
-  background-position: center right;
-  background-position: right;
-  background-size: contain;
+  background-position-y: center;
+  background-position-x: 101%;
 }
 
 .offer:before {
@@ -465,6 +485,7 @@ img {
 .offer__text_right {
   -ms-flex-preferred-size: 195px;
       flex-basis: 195px;
+  margin-right: 5px;
 }
 
 .offer__text span {
@@ -475,6 +496,12 @@ img {
   display: block;
   font-size: 15px;
   font-weight: 400;
+}
+
+@media (min-width: 1921px) {
+  .offer {
+    background-size: 50%;
+  }
 }
 
 @media (max-width: 1200px) {

@@ -28,6 +28,23 @@ img
     background-color: lighten($primary-color, 10%)
   &:focus
     outline-style: none
+  &_top
+    display: none
+    position: fixed
+    bottom: 0
+    left: 50%
+    margin-left: -40px
+    cursor: pointer
+    width: 0
+    height: 0
+    border: 40px solid transparent
+    border-bottom-color: $primary-color
+    border-top: 0
+    span
+      position: absolute
+      bottom: -35px
+      left: -20px
+      font-size: 12px
 .input
   border: 1px solid $border-input
   padding: 20px 26px

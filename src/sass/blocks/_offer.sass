@@ -1,10 +1,9 @@
 .offer
   position: relative
-  padding: 76px 0 90px 0
+  padding: 76px 0 89px 0
   background: url("../img/offer/offer-bg.png") no-repeat
-  background-position: center right
-  background-position: right
-  background-size: contain
+  background-position-y: center
+  background-position-x: 101%
   &:before
     position: absolute
     top: 0
@@ -63,12 +62,16 @@
       line-height: 24px
     &_right
       flex-basis: 195px
+      margin-right: 5px
     span
       display: block
   &__phone
     display: block
     font-size: 15px
     font-weight: 400
+@media (min-width: 1921px)
+  .offer
+    background-size: 50%
 @media (max-width: 1200px)
   .offer
     background-size: cover
