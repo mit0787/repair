@@ -8,6 +8,7 @@
   <title>Ремонт Квартир</title>
   <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="./css/slick.css">
+  <link rel="stylesheet" href="./css/animate.css">
   <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -23,7 +24,7 @@
           <div class="navbar__contacts">
             <span class="navbar__adress">Калуга, Москва, МО</span>
             <!-- /.navbar__adress -->
-            <a href="tel: +7 (495) 42-251-31" class="navbar__phone">+7 (495) 42-251-31</a>
+            <a href="tel:+7(495)42-251-31" class="navbar__phone">+7 (495) 42-251-31</a>
             <!-- /.navbar__phone -->
           </div>
           <!-- /.navbar__contacts -->
@@ -41,7 +42,7 @@
     <section class="hero">
       <div class="container">
         <div class="hero-block">
-          <div class="hero-text">
+          <div class="hero-text  wow bounceInRight delay-1s">
             <h1 class="hero-text__title">
               Внутренняя отделка помещений "под ключ"
             </h1>
@@ -79,7 +80,7 @@
             <!-- /.hero-list -->
           </div>
           <!-- /.hero-text -->
-          <div class="hero-image">
+          <div class="hero-image wow bounceInLeft delay-1s">
             <img src="./img/hero/hero-image.jpg" alt="">
           </div>
           <!-- /.hero-image -->
@@ -99,8 +100,8 @@
           <!-- /.offer__subtitle -->
           <form action="#" class="form offer__form">
             <input type="text" class="input offer__input" placeholder="Ваше имя">
-            <input type="tell" class="input offer__input" placeholder="Ваш телефон">
-            <button class="button offer__button">Получить бесплатный дизайн-проект</button>
+            <input type="tel" class="input offer__input" placeholder="Ваш телефон">
+            <button class="button offer__button wow heartBeat" data-wow-offset="300" id="offer-button">Получить бесплатный дизайн-проект</button>
           </form>
           <!-- /.form offer__form -->
           <div class="offer__text">
@@ -109,7 +110,7 @@
             </div>
             <div class="offer__text_right">
               <span>или перезвоните нам сами</span>
-              <a href="tel: +7 (495) 42-251-31" class="offer__phone navbar__phone">+7 (495) 42-251-31</a>
+              <a href="tel:+7(495)42-251-31" class="offer__phone navbar__phone">+7 (495) 42-251-31</a>
             </div>
           </div>
         </div>
@@ -117,14 +118,13 @@
       <!-- /.container -->
     </section>
     <!-- /.offer -->
-  </main>
 
   <section class="section portfolio">
     <div class="container">
       <h2 class="section-title portfolio__title">Работая с 2007 года,<br>
-      мы сделали более 500 ремонтов в квартирах и домах</h2>
+        мы сделали более 500 ремонтов в квартирах и домах</h2>
       <!-- /.section-title portfolio_title -->
-      <div class="slider portfolio__slider">
+      <div class="slider portfolio__slider wow flipInX" data-wow-offset="500">
         <div class="slider__item"><img class="slider__image" src="img/portfolio/photo-1.png" alt=""></div>
         <!-- /.slider_item -->
         <div class="slider__item"><img class="slider__image" src="img/portfolio/photo-2.png" alt=""></div>
@@ -155,6 +155,166 @@
   </section>
   <!-- /.section portfolio -->
 
+    <section class="section price">
+      <div class="container">
+        <h2 class="section-title price__title">У нас очень гибкая система скидок
+          на комплексные работы!</h2>
+        <!-- /.section-title price__title -->
+        <div class="section-subtitle price__subtitle">Прайс на наши услуги</div>
+        <!-- /.section-subtitle price__subtitle -->
+
+        <div class="cards">
+          <div class="card price__card wow fadeInLeft" data-wow-offset="500">
+            <div class="card__image">
+              <img src="./img/price/photo-2.jpg" alt="">
+            </div>
+            <!-- /.card__image -->
+            <div class="card__text">
+              <h4 class="card__title">Ремонт ванных комнат и с/у</h4>
+              <!-- /.card__title -->
+              <a href="#" class="card__link">Узнать цены</a>
+              <!-- /.card__link -->
+            </div>
+            <!-- /.card__text -->
+          </div>
+          <!-- /.card -->
+          <div class="card price__card wow fadeInDown" data-wow-offset="500">
+            <div class="card__image">
+              <img src="./img/price/photo-1.jpg" alt="">
+            </div>
+            <!-- /.card__image -->
+            <div class="card__text">
+              <h4 class="card__title">Ремонт комнат и квартир</h4>
+              <!-- /.card__title -->
+              <a href="#" class="card__link">Узнать цены</a>
+              <!-- /.card__link -->
+            </div>
+            <!-- /.card__text -->
+          </div>
+          <!-- /.card -->
+          <div class="card price__card wow fadeInRight" data-wow-offset="500">
+            <div class="card__image">
+              <img src="./img/price/photo-3.jpg" alt="">
+            </div>
+            <!-- /.card__image -->
+            <div class="card__text">
+              <h4 class="card__title">Отделка офисных помещений</h4>
+              <!-- /.card__title -->
+              <a href="#" class="card__link">Узнать цены</a>
+              <!-- /.card__link -->
+            </div>
+            <!-- /.card__text -->
+          </div>
+          <!-- /.card -->
+          <div class="card price__card wow fadeInLeft" data-wow-offset="500">
+            <div class="card__image">
+              <img src="./img/price/photo-6.jpg" alt="">
+            </div>
+            <!-- /.card__image -->
+            <div class="card__text">
+              <h4 class="card__title">Ремонт в новостройках</h4>
+              <!-- /.card__title -->
+              <a href="#" class="card__link">Узнать цены</a>
+              <!-- /.card__link -->
+            </div>
+            <!-- /.card__text -->
+          </div>
+          <!-- /.card -->
+          <div class="card price__card wow fadeInUp" data-wow-offset="500">
+            <div class="card__image">
+              <img src="./img/price/photo-5.jpg" alt="">
+            </div>
+            <!-- /.card__image -->
+            <div class="card__text">
+              <h4 class="card__title">Ремонт кухонь</h4>
+              <!-- /.card__title -->
+              <a href="#" class="card__link">Узнать цены</a>
+              <!-- /.card__link -->
+            </div>
+            <!-- /.card__text -->
+          </div>
+          <!-- /.card -->
+          <div class="card price__card wow fadeInRight" data-wow-offset="500">
+            <div class="card__image">
+              <img src="./img/price/photo-4.jpg" alt="">
+            </div>
+            <!-- /.card__image -->
+            <div class="card__text">
+              <h4 class="card__title">Ремонт дач и коттеджей</h4>
+              <!-- /.card__title -->
+              <a href="#" class="card__link">Узнать цены</a>
+              <!-- /.card__link -->
+            </div>
+            <!-- /.card__text -->
+          </div>
+          <!-- /.card -->
+        </div>
+        <!-- /.cards -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.section price -->
+
+    <section class="section steps">
+      <div class="container">
+        <h2 class="section-title steps__title">Наши специалисты готовы выехать на замер
+        в любое удобное для Вас время</h2>
+        <!-- /.section__title -->
+        <span class="section-subtitle steps__subtitle">5 шагов до ремонта</span>
+        <!-- /.section__subtitle steps__subtitle -->
+        <div class="steps-block">
+          <div class="step wow fadeInLeft">
+            <div class="step__image">
+              <img src="./img/price/Forma_1.svg" alt="">
+            </div>
+            <!-- /.step__image -->
+            <span class="step__text">Вы звоните нам<br> или оставляете заявку</span>
+            <!-- /.step__text -->
+          </div>
+          <!-- /.step -->
+          <div class="step wow fadeInLeft delay-1s">
+            <div class="step__image">
+              <img src="./img/price/Forma_2.svg" alt="">
+            </div>
+            <!-- /.step__image -->
+            <span class="step__text">Согласуем удобное для Вас время выезда специалиста на замер</span>
+            <!-- /.step__text -->
+          </div>
+          <!-- /.step -->
+          <div class="step wow fadeInLeft delay-2s">
+            <div class="step__image">
+              <img src="./img/price/Forma_3.svg" alt="">
+            </div>
+            <!-- /.step__image -->
+            <span class="step__text">Рассчитываем смету согласовываем<br> с Вами</span>
+            <!-- /.step__text -->
+          </div>
+          <!-- /.step -->
+          <div class="step wow fadeInLeft delay-3s">
+            <div class="step__image">
+              <img src="./img/price/Forma_4.svg" alt="">
+            </div>
+            <!-- /.step__image -->
+            <span class="step__text">Подписываем договор закупаем материал<br> по оптовым ценам</span>
+            <!-- /.step__text -->
+          </div>
+          <!-- /.step -->
+          <div class="step wow fadeInLeft delay-4s">
+            <div class="step__image">
+              <img src="./img/price/Forma_5.svg" alt="">
+            </div>
+            <!-- /.step__image -->
+            <span class="step__text">Выполняем ремонт<br> в указанные сроки</span>
+            <!-- /.step__text -->
+          </div>
+          <!-- /.step -->
+        </div>
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.section steps -->
+  </main>
+
   <div class="modal" id="modal">
     <div class="modal-dialog">
       <button class="modal-dialog__close" id="close">&times;</button> <!-- /.modal-dialog__close -->
@@ -170,15 +330,19 @@
   <script src="./js/jquery-3.3.1.min.js"></script>
   <script src="./js/modal.js"></script>
   <script src="./js/slick.min.js"></script>
+  <script src="./js/wow.min.js"></script>
+
   <script>
-  $(document).ready(function () {
-    $(".slider").slick({
-      slidesToShow: 3,
-      slidesToScroll: 1,
-      prevArrow: $(".arrows__left"),
-      nextArrow: $(".arrows__right"),
-      responsive: [
-        {
+    new WOW({
+      mobile: false
+    }).init();
+   $(document).ready(function () {
+      $(".slider").slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        prevArrow: $(".arrows__left"),
+        nextArrow: $(".arrows__right"),
+        responsive: [{
           breakpoint: 1201,
           settings: {
             slidesToShow: 2,
@@ -192,12 +356,9 @@
             slidesToScroll: 1
           }
         }
-        
-      ]
+        ]
+      });
     });
-  });
-
-
   </script>
 
 </body>
