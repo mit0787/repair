@@ -52,6 +52,12 @@ img
   line-height: 45px
   +bold
   text-align: center
+.input.invalid
+  border: 1px solid red
+input + span
+  position: relative
+div.invalid
+  position: absolute
 @media (max-width: 1200px)
   .container
     width: 760px
@@ -73,5 +79,7 @@ img
     max-width: 270px
     font-size: 18px
     line-height: 1.2
+  div.invalid
+    display: none!important
     
 

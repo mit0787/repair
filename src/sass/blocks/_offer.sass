@@ -69,6 +69,10 @@
     display: block
     font-size: 15px
     font-weight: 400
+.offer__input + span > div.invalid
+  top: 70px
+  right: 80px
+  width: 125px
 @media (min-width: 1920px)
   .offer
     background-size: 51%
@@ -83,10 +87,12 @@
       line-height: 25px
     &__input
       flex-basis: 275px
+      &:first-child
+        margin-right: 0
     &__button
       flex-basis: 275px
-      padding: 18px 35px;
-      font-size: 14px;
+      padding: 18px 35px
+      font-size: 14px
     &__text
       max-width: 275px
       flex-direction: column
@@ -115,11 +121,8 @@
       line-height: 28px
     &__subtitle
       max-width: 235px
-    &__input
-      &:first-child
-        margin-right: 0
     &__form
-     justify-content: space-around
+     justify-content: center
      max-width: 495px
     &__text
       max-width: 495px

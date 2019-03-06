@@ -1,0 +1,28 @@
+.additional
+  padding: 92px 0
+  background-color: $primary-color
+  &-block
+    text-align: center
+  &__text
+    margin: 0 
+    font-size: 32px
+    font-weight: 400
+    line-height: 50px
+@media (max-width: 1200px)
+  .additional
+    &__text
+      font-size: 26px
+@media (max-width: 768px)
+  .additional
+    padding: 70px 0
+    &__text
+      margin: auto
+      font-size: 22px
+      max-width: 320px
+      line-height: 1.2
+@media (min-width: 320px) and (max-width: 576px)
+  .additional
+    &__text
+      max-width: 270px
+      font-size: 18px
+      line-height: 1.2

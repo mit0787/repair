@@ -27,7 +27,7 @@
       opacity: 1
   &__image
     position: relative
-    &:before
+    &::before
       content: ""
       position: absolute
       top: 0
@@ -39,6 +39,9 @@
       transition: 0.2s
     img
       display: block
+  &:nth-child(n+3)
+    .card__image::before
+      top: 1px
   &__text
     padding-bottom: 47px
   &__title
