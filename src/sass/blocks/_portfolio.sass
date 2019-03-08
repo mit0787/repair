@@ -4,10 +4,9 @@
   &__title
     margin: auto
     margin-bottom: 95px
-  &__slider
-    margin-bottom: 68px
 .arrows
   margin: auto
+  margin-top: 68px
   display: flex
   justify-content: center
   &__left
@@ -17,8 +16,18 @@
   &__left, &__right
     flex-basis: 60px
     cursor: pointer
+.slider-item:active
+  outline-style: none
+.slick-slider
+  margin: 0 -15px
+.slick-slide
+  text-align: center
+  margin-right: 15px
+  margin-left: 15px
+  outline: none
 @media (max-width: 1200px)
   .portfolio
+    background: $secondary-color
     &__title
       margin-bottom: 41px
     &__slider
@@ -30,7 +39,7 @@
   .portfolio
     padding-top: 43px
     padding-bottom: 64px
-    background: $secondary-color
+    
     &__title
       max-width: 380px
 @media (max-width: 576px)

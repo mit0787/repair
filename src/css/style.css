@@ -704,12 +704,9 @@ div.invalid {
   margin-bottom: 95px;
 }
 
-.portfolio__slider {
-  margin-bottom: 68px;
-}
-
 .arrows {
   margin: auto;
+  margin-top: 68px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -732,7 +729,25 @@ div.invalid {
   cursor: pointer;
 }
 
+.slider-item:active {
+  outline-style: none;
+}
+
+.slick-slider {
+  margin: 0 -15px;
+}
+
+.slick-slide {
+  text-align: center;
+  margin-right: 15px;
+  margin-left: 15px;
+  outline: none;
+}
+
 @media (max-width: 1200px) {
+  .portfolio {
+    background: #f5f5f5;
+  }
   .portfolio__title {
     margin-bottom: 41px;
   }
@@ -748,7 +763,6 @@ div.invalid {
   .portfolio {
     padding-top: 43px;
     padding-bottom: 64px;
-    background: #f5f5f5;
   }
   .portfolio__title {
     max-width: 380px;
