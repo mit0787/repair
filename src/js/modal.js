@@ -11,6 +11,7 @@ $(document).ready(function () {
     modal.removeClass("modal_active")
   });
 });
+
 $(function() {
   $(window).scroll(function () {
     if ($(this).scrollTop() != 0) $("#top").fadeIn();

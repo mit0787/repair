@@ -32,6 +32,7 @@
     font-size: 16px
     font-weight: 400
   &__form
+    position: relative
     display: flex
     flex-wrap: wrap
   &__input
@@ -42,6 +43,9 @@
     line-height: 24px
     &:first-child
       margin-right: 14px
+    + div.invalid
+      top: 60px
+      right: 260px
   &__button
     flex-basis: 495px
     width: 100%
@@ -69,9 +73,8 @@
     display: block
     font-size: 15px
     font-weight: 400
-.offer__input + span > div.invalid
-  top: 70px
-  left: -235px
+.offer__input.phone + div.invalid
+      right: 5px
 @media (min-width: 1920px)
   .offer
     background-size: 51%
@@ -88,6 +91,9 @@
       flex-basis: 275px
       &:first-child
         margin-right: 0
+      + div.invalid
+        top: 60px
+        right: 110px
     &__button
       flex-basis: 275px
       padding: 18px 35px
@@ -101,6 +107,9 @@
         flex-basis: 48px
       &_left
         margin-bottom: 10px
+  .offer__input.phone + div.invalid
+    top: 156px
+    right: 110px
 @media (max-width: 768px)
   .offer
     padding: 50px 0
@@ -127,6 +136,10 @@
       max-width: 495px
       align-items: center
       text-align: center
+  .offer__input + div.invalid
+    right: 115px
+  .offer__input.phone + div.invalid
+    right: 115px
 @media (min-width: 320px) and (max-width: 576px)
   .offer
     &-block

@@ -10,6 +10,27 @@
   <link rel="stylesheet" href="./css/slick.css">
   <link rel="stylesheet" href="./css/animate.css">
   <link rel="stylesheet" href="./css/style.css">
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function (m, e, t, r, i, k, a) {
+      m[i] = m[i] || function () {
+        (m[i].a = m[i].a || []).push(arguments)
+      };
+      m[i].l = 1 * new Date();
+      k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k,
+        a)
+    })(window, document, "script", "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js", "ym");
+    ym(52711027, "init", {
+      clickmap: true,
+      trackLinks: true,
+      accurateTrackBounce: true,
+      webvisor: true,
+      trackHash: true
+    });
+  </script>
+  <noscript>
+    <div><img src="https://mc.yandex.ru/watch/52711027" style="position:absolute; left:-9999px;" alt="" /></div>
+  </noscript> <!-- /Yandex.Metrika counter -->
 </head>
 
 <body>
@@ -28,7 +49,7 @@
             <!-- /.navbar__phone -->
           </div>
           <!-- /.navbar__contacts -->
-          <button class="button navbar__button" id="button">Перезвоните мне</button>
+          <button class="button navbar__button" id="button" onclick="ym(52711027, 'reachGoal', 'button'); return true;">Перезвоните мне</button>
         </div>
         <!-- /.navbar__info -->
       </div>
@@ -93,7 +114,7 @@
 
     <section class="offer">
       <div class="container">
-        <div class="offer-block">
+        <div class="offer-block" method="get" onsubmit="ym(52711027, 'reachGoal', 'form'); return true;">
           <h2 class="offer__title">Мы бесплатно разработаем дизайн-проект Вашего жилья и реализуем его!</h2>
           <!-- /.offer__title -->
           <span class="offer__subtitle">Оставьте заявку на разработку бесплатного дизайн-проекта!</span>
@@ -101,8 +122,7 @@
           <form action="#" class="form offer__form" id="offer-form">
             <input type="text" name="username" class="input offer__input" placeholder="Ваше имя">
             <input type="tel" name="phone" class="input offer__input phone" placeholder="Ваш телефон">
-            <button class="button offer__button wow heartBeat" data-wow-offset="200" id="offer-button">Получить
-              бесплатный дизайн-проект</button>
+            <button class="button offer__button animated pulse infinite" data-wow-offset="200" id="offer-button">Получить бесплатный дизайн-проект</button>
           </form>
           <!-- /.form offer__form -->
           <div class="offer__text">
@@ -326,73 +346,73 @@
     </section>
     <!-- /.section additional -->
 
-        <section class="section assistance">
-          <div class="container">
-            <div class="assistance-block">
-              <div class="assistance__item">
-                <h3 class="assistance__text">Поможем закупить все материалы
-                  по оптовым ценам у проверенных поставщиков</h3>
-                <div class="assistance__image">
-                  <img src="./img/assistance/assistance-1.png" alt="">
-                </div>
-              </div>
-              <!-- /.assistance__item -->
-              <div class="assistance__item">
-                <h3 class="assistance__text">Мы дадим Вам <b>максимальные скидки</b>
-                  у наших партнеров для закупки материалов оптом</h3>
-                <div class="assistance__image">
-                  <img src="./img/assistance/assistance-2.png" alt="">
-                </div>
-              </div>
-              <!-- /.assistance__item -->
-              <div class="assistance__item">
-                <h3 class="assistance__text">Все, что не сможете найти в городе -
-                  поможем заказать <b>у проверенных поставщиков</b></h3>
-                <div class="assistance__image">
-                  <img src="./img/assistance/assistance-3.png" alt="">
-                </div>
-              </div>
-              <!-- /.assistance__item -->
+    <section class="section assistance">
+      <div class="container">
+        <div class="assistance-block">
+          <div class="assistance__item">
+            <h3 class="assistance__text">Поможем закупить все материалы
+              по оптовым ценам у проверенных поставщиков</h3>
+            <div class="assistance__image">
+              <img src="./img/assistance/assistance-1.png" alt="">
             </div>
-            <!-- /.assistance-block -->
           </div>
-          <!-- /.container -->
-        </section>
-        <!-- /.section assistance -->
-        
-        <section class="section warranties">
-          <div class="container">
-            <h2 class="warranties__title">Все наши гарантийные обязательства
-              подробно и прозрачно описаны в договоре</h2>
-            <!-- /.warranies__title -->
-            <div class="warranties-block">
-              <div class="warranties__item">
-                <div class="warranties__image">
-                  <img src="./img/warranties/warranty-1.png" alt="">
-                </div>
-                <p class="warranties__text">Гарантия на качество
-                  выполняемых работ</p>
-              </div>
-              <div class="warranties__item">
-                <div class="warranties__image">
-                  <img src="./img/warranties/warranty-2.png" alt="">
-                </div>
-                <p class="warranties__text">Гарантия на фиксированные цены
-                  Виды работ и цены на них прописаны в договоре</p>
-              </div>
-              <div class="warranties__item">
-                <div class="warranties__image">
-                  <img src="./img/warranties/warranty-3.png" alt="">
-                </div>
-                <p class="warranties__text">Гарантия на точное соблюдение
-                  сроков и ответственность за<br> их невыполнение</p>
-              </div>
+          <!-- /.assistance__item -->
+          <div class="assistance__item">
+            <h3 class="assistance__text">Мы дадим Вам <b>максимальные скидки</b>
+              у наших партнеров для закупки материалов оптом</h3>
+            <div class="assistance__image">
+              <img src="./img/assistance/assistance-2.png" alt="">
             </div>
-            <!-- /.warranties-block -->
           </div>
-          <!-- /.container -->
-        </section>
-        <!-- /.section warranties -->
+          <!-- /.assistance__item -->
+          <div class="assistance__item">
+            <h3 class="assistance__text">Все, что не сможете найти в городе -
+              поможем заказать <b>у проверенных поставщиков</b></h3>
+            <div class="assistance__image">
+              <img src="./img/assistance/assistance-3.png" alt="">
+            </div>
+          </div>
+          <!-- /.assistance__item -->
+        </div>
+        <!-- /.assistance-block -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.section assistance -->
+
+    <section class="section warranties">
+      <div class="container">
+        <h2 class="warranties__title">Все наши гарантийные обязательства
+          подробно и прозрачно описаны в договоре</h2>
+        <!-- /.warranies__title -->
+        <div class="warranties-block">
+          <div class="warranties__item">
+            <div class="warranties__image">
+              <img src="./img/warranties/warranty-1.png" alt="">
+            </div>
+            <p class="warranties__text">Гарантия на качество
+              выполняемых работ</p>
+          </div>
+          <div class="warranties__item">
+            <div class="warranties__image">
+              <img src="./img/warranties/warranty-2.png" alt="">
+            </div>
+            <p class="warranties__text">Гарантия на фиксированные цены
+              Виды работ и цены на них прописаны в договоре</p>
+          </div>
+          <div class="warranties__item">
+            <div class="warranties__image">
+              <img src="./img/warranties/warranty-3.png" alt="">
+            </div>
+            <p class="warranties__text">Гарантия на точное соблюдение
+              сроков и ответственность за<br> их невыполнение</p>
+          </div>
+        </div>
+        <!-- /.warranties-block -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.section warranties -->
 
     <section class="section brif">
       <div class="container">
@@ -427,12 +447,12 @@
                 расчет ремонта по телефону</h3>
               <span class="form__subtitle">Для этого заполните форму ниже</span>
               <form class="input-block" action="#" id="brif-form">
-                <input type="text" name="username" class="input brif__input" placeholder="Ваше имя">
+                <input type="text" name="username" class="input brif__input user" placeholder="Ваше имя">
                 <input type="tel" name="phone" class="input brif__input phone" placeholder="Ваш телефон">
-                <input type="email" name="email" class="input brif__input" placeholder="Ваш email">
+                <input type="email" name="email" class="input brif__input email" placeholder="Ваш email">
                 <button class="button brif__button">Рассчитать стоимость</button>
               </form>
-                <span class="form__description">Мы перезвоним Вам в течение 60 секунд</span>
+              <span class="form__description">Мы перезвоним Вам в течение 60 секунд</span>
             </div>
           </div>
           <!-- /.form brif__form -->
@@ -453,39 +473,39 @@
         <div class="contacts">
           <h3 class="contacts__title">Приезжайте к нам в гости!
             Проконсультируем Вас<br> по всем вопросам ремонта</h3>
-        <ul class="contacts-list">
-          <li class="contacts-list__item">
-            <div class="contacts-list__icon">
-              <img src="./img/footer/map.png" alt="">
-            </div>
-            <p class="contacts-list__text">г. Москва <span>ул. Ленина, д. 10,
-              корпус 2, оф. 308</span></p>
-          </li>
-          <!-- /.contacts-list__item -->
-          <li class="contacts-list__item">
-            <div class="contacts-list__icon">
-              <img src="./img/footer/clock.png" alt="">
-            </div>
-            <p class="contacts-list__text">Режим работы: <span>с 9:00 до 18:00</span></p>
-          </li>
-          <!-- /.contacts-list__item -->
-          <li class="contacts-list__item">
-            <div class="contacts-list__icon">
-              <img src="./img/footer/phone.png" alt="">
-            </div>
-            <p class="contacts-list__text">Телефон:
-            <a href="tel:+7(495)42-251-31">+ 7 (495) 42-251-31</a></p>
-          </li>
-          <!-- /.contacts-list__item -->
-        </ul>
-        <!-- /.contacts-list -->
+          <ul class="contacts-list">
+            <li class="contacts-list__item">
+              <div class="contacts-list__icon">
+                <img src="./img/footer/map.png" alt="">
+              </div>
+              <p class="contacts-list__text">г. Москва <span>ул. Ленина, д. 10,
+                  корпус 2, оф. 308</span></p>
+            </li>
+            <!-- /.contacts-list__item -->
+            <li class="contacts-list__item">
+              <div class="contacts-list__icon">
+                <img src="./img/footer/clock.png" alt="">
+              </div>
+              <p class="contacts-list__text">Режим работы: <span>с 9:00 до 18:00</span></p>
+            </li>
+            <!-- /.contacts-list__item -->
+            <li class="contacts-list__item">
+              <div class="contacts-list__icon">
+                <img src="./img/footer/phone.png" alt="">
+              </div>
+              <p class="contacts-list__text">Телефон:
+                <a href="tel:+7(495)42-251-31">+ 7 (495) 42-251-31</a></p>
+            </li>
+            <!-- /.contacts-list__item -->
+          </ul>
+          <!-- /.contacts-list -->
         </div>
       </div>
     </div>
   </footer>
   <!-- /.footer section -->
 
-  
+
 
   <div class="modal" id="modal">
     <div class="modal-dialog">
@@ -513,6 +533,10 @@
     }).init();
 
     $(document).ready(function () {
+      // настройка animate.css
+      $(".offer__button").hover(function () {
+        $(this).removeClass('animated');
+      });
       // валидация вехней формы
       $("#offer-form").validate({
         rules: {
@@ -533,9 +557,8 @@
             required: "Заполните поле"
           }
         },
-        errorClass: "invalid offer-invalid",
-        errorElement: "div",
-        wrapper: 'span'
+        errorClass: "invalid",
+        errorElement: "div"
       });
       // Валидация нижней формы
       $("#brif-form").validate({
@@ -566,8 +589,7 @@
           }
         },
         errorClass: "invalid",
-        errorElement: "div",
-        wrapper: 'span'
+        errorElement: "div"
       });
       // Валидация телефона
       $(".phone").mask("8 (999) 999-999-99")

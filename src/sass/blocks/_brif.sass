@@ -87,12 +87,19 @@
       margin-left: 32px
       font-size: 18px
 .input-block
+  position: relative
   display: flex
   flex-direction: column
   width: 370px
-.brif__input + span > div.invalid
-  top: -55px
-  right: 17px
+.user + div.invalid
+  top: 50px
+  right: 5px
+.brif__input.phone + div.invalid
+  top: 130px
+  right: 5px
+.email + div.invalid
+  top: 210px
+  right: 5px
 @media (min-width: 1921px)
   .brif
     background-size: 50%, 50% 100%
@@ -131,10 +138,12 @@
       margin-bottom: 8px
     &__button
       margin-top: 8px
-.brif__input + span > div.invalid
-  top: -55px
-  right: 17px
-  max-width: 150px
+  .user + div.invalid
+    top: 45px
+  .brif__input.phone + div.invalid
+    top: 118px
+  .email + div.invalid
+    top: 193px
 @media (max-width: 768px)
   .brif
     background-position: top center, center bottom

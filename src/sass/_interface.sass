@@ -54,17 +54,23 @@ img
   text-align: center
 .input.invalid
   border: 1px solid red
-input + span
-  position: relative
 div.invalid
   position: absolute
+  padding: 5px
   font-size: 12px
   text-align: right
+  background-color: #fff
+  border: 1px solid $primary-color
+  border-radius: 5px
+  box-shadow: 5px 5px 10px #e0e0e0
 @media (max-width: 1200px)
   .container
     width: 760px
   .section-title
     font-size: 24px
+  .button
+    &:hover
+      background-color: $primary-color
 @media (max-width: 768px)
   .section
     padding: 52px 0
