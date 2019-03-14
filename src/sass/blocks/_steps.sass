@@ -52,7 +52,7 @@
       &-block
         justify-content: center
     flex-basis: 50%
-    margin-bottom: 30px
+    margin-bottom: 29px
     &:not(:last-child)::after
       left: 350px
     &:nth-child(even)::after
@@ -61,9 +61,10 @@
   .step
     &s
       padding-top: 0
-      &__title,
+      &__title
+        margin-bottom: 25px
       &__subtitle
-        margin-bottom: 30px
+        margin-bottom: 32px
       &-block
         flex-direction: column
     &:not(:last-child)::after
@@ -80,3 +81,8 @@
       max-width: 134px
       font-size: 12px
       line-height: 16px
+    &__image
+      margin-bottom: 29px
+  .step:first-child
+    .step__image
+      margin-bottom: 20px

@@ -1,9 +1,10 @@
 .offer
   position: relative
   padding: 76px 0 89px 0
-  background: url("../img/offer/offer-bg.png") no-repeat
+  background: url("../img/offer/offer-bg.jpg") no-repeat
   background-position-y: center
   background-position-x: 101%
+  background-size: contain
   &:before
     position: absolute
     top: 0
@@ -36,8 +37,9 @@
     display: flex
     flex-wrap: wrap
   &__input
+    display: inline-block
     margin-bottom: 30px
-    flex-basis: 240px
+    width: 240px
     font-size: 15px
     font-weight: 400
     line-height: 24px
