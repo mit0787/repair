@@ -26,11 +26,13 @@
     font-size: 20px
     font-weight: 400
     color: $text-color
+@media (max-width: 768px)
+  .navbar
+    &__contacts
+      display: none
 @media (max-width: 576px)
   .navbar
     padding: 17px 23px 18px 20px
-    &__contacts
-      display: none
     &__button
       padding: 14px 26px
       +bold
